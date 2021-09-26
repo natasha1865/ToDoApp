@@ -15,45 +15,19 @@ header {
   /* Style aside*/
   aside#picture {
     display: inline-block;
+    margin-left: 30px;
 }
 /* Style section*/
 section#title {
+    background-color: red;
     float: right;
+    margin-left: 0%;
+    width: 700px;
+    margin-right: 35px;
+    height: 450px;
 }
   
-  /* Container for flexboxes */
-  section {
-    margin-left: 45px;
-    margin-right: 45px;
-    display: -webkit-flex;
-    display: flex;
-  }
-  
-  /* Style the navigation menu */
-  nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: red;
-    padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: red;  
-    padding: 10px;
-  }
-  
-  /* Style the footer */
+/* Style the footer */
   footer {
     background-color: #777;
     margin-left: 45px;
