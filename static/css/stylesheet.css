@@ -19,12 +19,19 @@ header {
 }
 /* Style section*/
 section#title {
-    background-color: red;
+    background-color: rgb(70, 70, 241);
     float: right;
-    margin-left: 0%;
-    width: 700px;
+    margin-left: 10%;
+    width: 900px;
     margin-right: 35px;
     height: 450px;
+}
+
+/* Style links*/
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
 }
   
 /* Style the footer */
