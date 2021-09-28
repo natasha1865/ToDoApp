@@ -43,6 +43,27 @@ a {
     text-align: center;
     color: white;
   }
+
+  .todo-stats {
+    position: relative;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: var(--white);
+  }
+
+  .todo-stats > div {
+    position: relative;
+    z-index: 1;
+  }
+  @media screen and (min-width: 600px) {  
+    .todo-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
   
   /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
   @media (max-width: 600px) {
