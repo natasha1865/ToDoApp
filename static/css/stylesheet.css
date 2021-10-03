@@ -15,6 +15,11 @@ header {
     padding-bottom: 1px;
   }
 
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
   /* Style aside*/
   aside#picture {
     display: inline-block;
@@ -38,6 +43,7 @@ section#title {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
+  color: white;
   padding: 10px;
   border: solid;
   border-color: white;
