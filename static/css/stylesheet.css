@@ -32,6 +32,19 @@ section#title {
     height: 450px;
 }
 
+/* Style to do stats*/
+.todo-stats {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  border: solid;
+  border-color: white;
+  margin-top: 0%;
+  padding: 10px;
+}
+
 /* Style links*/
 a {
   text-decoration: none;
@@ -39,15 +52,7 @@ a {
   font-size: 30px;
 }
   
-.todo-stats {
-    position: relative;
-    text-align: center;
-    padding: 5px 10px;
-    margin: 10px 0;
-    color: var(--white);
-  }
-
-  .todo-stats > div {
+.todo-stats > div {
     position: relative;
     z-index: 1;
   }
