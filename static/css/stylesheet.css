@@ -43,11 +43,21 @@ header {
   border-radius: 25px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 15px;
+
 }
 
-/* Style section*/
+.container {
+  border: solid;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Style section
 section#title {
     background-color: rgb(70, 70, 241);
     color: white;
@@ -59,7 +69,7 @@ section#title {
     display: inline-flex;
   }
 
-/* Style to do stats*/
+/* Style to do stats
 .todo-stats {
   position: relative;
   text-align: center;
