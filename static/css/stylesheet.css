@@ -5,8 +5,7 @@ body {
 /* Style the header */
 header {
     background-color: #666;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: auto;
     text-align: center;
     font-size: 35px;
     color: white;
@@ -34,17 +33,7 @@ a {
   font-size: 30px;
 }
   
-/* Style the footer */
-  footer {
-    background-color: #777;
-    margin-left: 45px;
-    margin-right: 45px;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-
-  .todo-stats {
+.todo-stats {
     position: relative;
     text-align: center;
     padding: 5px 10px;
@@ -56,6 +45,8 @@ a {
     position: relative;
     z-index: 1;
   }
+
+
   @media screen and (min-width: 600px) {  
     .todo-stats {
       display: grid;
