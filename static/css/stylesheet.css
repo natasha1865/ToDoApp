@@ -47,6 +47,78 @@ header {
 
 }
 
+input,
+button {
+  font-family: inherit;
+  font-size: 100%;
+  background: none;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+ol {
+  list-style: none;
+}
+.todo-list li {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: auto 20px;
+  grid-column-gap: 10px;
+  padding: 0 10px;
+}
+ 
+.todo-list li + li {
+  margin-top: 10px;
+}
+
+.todo-list .checkbox-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+ 
+.todo-list .checkbox-wrapper label {
+  display: grid;
+  margin-right: 10px;
+}
+ 
+.todo-list .checkbox-wrapper svg {
+  grid-column: 1;
+  grid-row: 1;
+  width: 20px;
+  height: 20px;
+}
+ 
+.todo-list .checkbox-wrapper .checkmark {
+  display: none;
+}
+ 
+.todo-list [type="checkbox"]:checked + label .checkmark {
+  display: block;
+}
+ 
+.todo-list [type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-list .remove-task {
+  display: flex;
+  padding: 2px;
+}
+ 
+.todo-list .remove-task svg {
+  width: 16px;
+  height: 16px;
+}
+
 .container {
   border: solid;
   color: white;

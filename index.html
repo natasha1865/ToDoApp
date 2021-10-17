@@ -14,7 +14,8 @@
 </head>
 
 <body>
-  <header>
+  <div container>
+    <header>
     <h2>Kids Birthday party Planner</h2>
   </header>
   <div class="wrapper">
@@ -31,12 +32,49 @@
         Remaining Tasks: <span>0</span>
     </div>
   </div>
+  </div>
   <div class="container">
+    <form class="todo-form">
+      <div class="form-wrapper">
+        <input type="text" name="name" autofocus>
+      </div>
+      <div class="form-wrapper">
+        <button type="submit">Add new task</button>
+      </div>
+      </form>
+      <div class="todo-stats">
+        <div class="total-tasks">
+          Total Tasks: <span>0</span>
+        </div>
+        <div class="completed-tasks">
+          Completed Tasks: <span>0</span>
+        </div>
+        <div class="remaining-tasks">
+          Remaining Tasks: <span>0</span>
+        </div>
+        <div>
+          <ol class="todo-list">
+            <li id="theme">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="go for a walk" name="tasks">
+                <label for="go for a walk">
+                  <svg class="checkbox-empty"></svg>
+                  <svg class="checkmark"></svg>
+                </label>
+                <span contenteditable>go for a walk</span>
+              </div>
+              <button class="remove-task" title="REMOVE GO FOR A WALK TASK">
+                
+              </button>  
+            </li>
+          </ol>
+        </div>
       <ul>
         <li>
           <a href="#">Theme</a></li>
         <input type="text" name="name"> 
         <button type="submit" id="theme">Add new Task </button>
+        <ol class="todo-list"></ol>
         <li><a href="#">Invitations</a></li>
         <input type="text" name="name">  
         <button type="submit" id="theme">Add new Task </button>
@@ -55,6 +93,7 @@
         </ul>
   </div>
 
+  
 
   <footer></footer>
     
