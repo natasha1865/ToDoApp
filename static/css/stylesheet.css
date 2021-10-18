@@ -28,7 +28,7 @@
 }
 
 body {
-  background-color: grey;
+  background-image: linear-gradient(100deg, hsl(319, 9%, 65%), #9b7186);
 }
   /* #363532, rgb(88, 111, 112) 
   align-items: center;
@@ -108,24 +108,22 @@ body {
   margin: 0 1rem;
   min-height: 10vh;
   width: 100%;
+}*/
+
+div#themes {
+    align-items: right;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3%;
 }
 
-
-
-/* Theme buttons div 
-.flexrow-container {
-  align-items: center;
-  align-self: flex-end;
-  display: flex;
-  justify-content: space-around;
-  margin-right: 3%;
-}
-
-.theme-selector {
-  border: 1px solid #d1dae3;
+.standard-theme.theme-selector, .light-theme.theme-selector, .darker-theme.theme-selector {
+  border: 1px solid white;
   border-radius: 100%;
   height: 35px;
   margin: 0 8px;
+  float: left ;
   transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
   width: 35px;
 }
@@ -140,7 +138,7 @@ body {
 }
 
 .standard-theme {
-  background-image: linear-gradient(100deg, #575656, #062e3f);
+  background-image: linear-gradient(100deg, #746069, #af4471);
 }
 
 .light-theme {
@@ -151,7 +149,7 @@ body {
   background-image: linear-gradient(100deg, #001214, #001f29);
 }
 
-form {
+/*form {
   display: flex;
   font-size: 1.7rem;
   justify-content: center;
