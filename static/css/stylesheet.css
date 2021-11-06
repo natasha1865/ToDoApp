@@ -260,6 +260,10 @@ form button {
   margin: 0 5px;
 }
 
+i.fas.fa-trash, i.fas.fa-check {
+  font-size: 2em;
+}
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
