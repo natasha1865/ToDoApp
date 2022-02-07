@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body { 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+  min-height: 100vh;
+  padding-top: 3%;
+}
+
 /*Style the header*/
 #header {
   align-items: center;
@@ -27,16 +36,57 @@
     margin-bottom: 20px;
 }
 
+/*style background color*/
 body {
   background-image: linear-gradient(100deg, #54454A, #583f47, #945064, #c0456a, #764453, #54454A);
 }
-  /* #363532, rgb(88, 111, 112) 
+
+/* Theme buttons div */
+.box {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  font-family: 'Work Sans', sans-serif;
-  min-height: 100vh;
-  padding-top: 3%;*/
+  justify-content: space-around;
+  margin-right: 3%;
+}
+
+.theme-selector  {
+  border: 2.5px solid white;
+  border-radius: 100%;
+  height: 35px;
+  margin: 48px;
+  margin-top: 5px;
+  float: left ;
+  box-shadow 300ms ease-in-out;
+  width: 35px;
+}
+
+.spiderman.theme-selector {
+  background-image: linear-gradient(100deg, #746069, #af4471);
+}
+
+.frozen.theme-selector {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+
+.pirate.theme-selector {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+}
+
+.outersapce.theme-selector {
+  background-image: linear-gradient(100deg, #746069, #af4471);
+}
+
+.dinasaur.theme-selector {
+  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+
+.tinkerbell.theme-selector {
+  background-image: linear-gradient(100deg, #001214, #001f29);
+}
+
+.theme-selector:hover { 
+  box-shadow: white 0 0 8px;
+  cursor: pointer;
 }
 
 /*Animation
@@ -97,47 +147,11 @@ body {
   margin: 0 1rem;
   min-height: 10vh;
   width: 100%;
-}*/
-
-div#themes {
-    align-items: right;
-    align-self: flex-end;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 3%;
 }
 
-.standard-theme.theme-selector, .light-theme.theme-selector, .darker-theme.theme-selector {
-  border: 1px solid white;
-  border-radius: 100%;
-  height: 35px;
-  margin: 48px;
-  margin-top: 5px;
-  float: left ;
-  transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
-  width: 35px;
-}
 
-.theme-selector:hover { 
-  box-shadow: white 0 0 8px;
-  cursor: pointer;
-}
 
-.theme-selector:active {
-  transform: scale(0.95);
-}
 
-.standard-theme {
-  background-image: linear-gradient(100deg, #746069, #af4471);
-}
-
-.light-theme {
-  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
-}
-
-.darker-theme {
-  background-image: linear-gradient(100deg, #001214, #001f29);
-}
 
 form {
   display: flex;
@@ -161,7 +175,7 @@ form input {
   width: 100%;
 }
 
-/* Input themes*/
+/* Input themes*
 form input.standard-input {
   background-color: #181a1a;
   color: rgb(247, 226, 223);
@@ -186,7 +200,7 @@ button:hover {
   cursor: pointer;
 }
 
-/* Button themes*/
+/* Button themes*
 button.standard-button {
   background-color: rgb(247, 226, 223);
   color: rgb(0, 0, 0);
@@ -215,7 +229,7 @@ form button {
 .todo-list {
   min-width: 25%;
 
-  /* To remove the bullets of unordered list*/
+  /* To remove the bullets of unordered list*
   list-style: none;
 }
 
@@ -232,7 +246,7 @@ form button {
   transition: background-color 200ms ease-in-out;
 }
 
-/* Items themes*/
+/* Items themes*
 .standard-todo {
   background-color: rgb(26, 27, 27);
 }
@@ -244,10 +258,10 @@ form button {
   font-size: 20px;
   flex: 1; 
   
-  /* To push the trash and the check button to the right*/
+  /* To push the trash and the check button to the right*
   border-radius: 30px;
 
-  /* wraps the links*/
+  /* wraps the links*
   overflow-wrap: anywhere;
 }
 
