@@ -5,7 +5,7 @@
 }
 
 body {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   font-family: 'Work Sans', sans-serif;
@@ -55,7 +55,7 @@ body {
   height: 35px;
   margin: 48px;
   margin-top: 5px;
-  float: left ;
+  float: left;
   box-shadow 300ms ease-in-out;
   width: 35px;
 }
