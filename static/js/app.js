@@ -15,7 +15,7 @@ outerspaceTheme.addEventListener('click', () => changeTheme4('outerspace'));
 dinasaurTheme.addEventListener('click', () => changeTheme5('dinasaur'));
 unicornTheme.addEventListener('click', () => changeTheme6('unicorn'));
 
-
+// Function to change theme
 function changeTheme1() {
   document.body.style.backgroundImage = "url('./static/images/spiderman.jpg')";
   document.body.style.backgroundRepeat = "no-repeat";
@@ -53,11 +53,5 @@ function changeTheme6() {
 }
 
 
-//pirateTheme.addEventListener('click', () => changeTheme('pirate'));
-//outerspaceTheme.addEventListener('click', () => changeTheme('outerspace'));
-//dinasaurTheme.addEventListener('click', () => changeTheme('dinasaur'));
-//unicornTheme.addEventListener('click', () => changeTheme('unicorn'));
 
-
-// change background theme
 
