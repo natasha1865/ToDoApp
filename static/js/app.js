@@ -5,6 +5,9 @@ const pirateTheme = document.querySelector('.pirate');
 const outerspaceTheme = document.querySelector('.outerspace');
 const dinasaurTheme = document.querySelector('.dinasaur');
 const unicornTheme = document.querySelector('.unicorn');
+const toDoBtn = document.querySelector('.todo-btn');
+const toDoInput = document.querySelector('todo-input');
+const toDoList = document.querySelector('todo-list');
 
 // Event Listeners
 
@@ -14,6 +17,7 @@ pirateTheme.addEventListener('click', () => changeTheme3('pirate'));
 outerspaceTheme.addEventListener('click', () => changeTheme4('outerspace'));
 dinasaurTheme.addEventListener('click', () => changeTheme5('dinasaur'));
 unicornTheme.addEventListener('click', () => changeTheme6('unicorn'));
+
 
 // Function to change theme
 function changeTheme1() {
