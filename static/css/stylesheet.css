@@ -59,7 +59,7 @@ body {
 
 /*button colors for themes*/
 .standard.theme-selector {
-  background-image: linear-gradient(100deg, pink, white, black);
+  background-image: linear-gradient(100deg, #c56b86, #5e3844, #583f47);
 }
 .spiderman.theme-selector {
   background-image: linear-gradient(100deg, #ee1919, #001f29, #453bce);
@@ -70,15 +70,15 @@ body {
 }
 
 .pirate.theme-selector {
-  background-image: linear-gradient(100deg, #e2cf25, #001f29);
-}
+  background-image: linear-gradient(100deg, #db8e19, #1a1616);
+} 
 
 .outerspace.theme-selector {
   background-image: linear-gradient(100deg, #27c022, #221f20);
 }
 
 .dinasaur.theme-selector {
-  background-image: linear-gradient(100deg, #db8e19, #1a1616);
+  background-image: linear-gradient(100deg, #e2cf25, #001f29);
 }
 
 .unicorn.theme-selector {

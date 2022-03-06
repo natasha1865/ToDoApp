@@ -1,4 +1,5 @@
 // Selectors
+const standardTheme = document.querySelector('standard');
 const spidermanTheme = document.querySelector('.spiderman');
 const frozenTheme = document.querySelector('.frozen');
 const pirateTheme = document.querySelector('.pirate');
@@ -10,7 +11,7 @@ const toDoInput = document.querySelector('todo-input');
 const toDoList = document.querySelector('todo-list');
 
 // Event Listeners
-
+standardTheme.addEventListener('click', () => changeThemeStd('standard'));
 spidermanTheme.addEventListener('click', () => changeTheme1('spiderman'));
 frozenTheme.addEventListener('click', () => changeTheme2('frozen'));
 pirateTheme.addEventListener('click', () => changeTheme3('pirate'));
@@ -58,6 +59,13 @@ function changeTheme6() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
+
+//Functions
+function addToDo(event) {
+  event.preventDefault();
+
+}
+
 
 
 
