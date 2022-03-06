@@ -58,27 +58,27 @@ body {
 }
 
 .spiderman.theme-selector {
-  background-image: linear-gradient(100deg, #746069, #af4471);
+  background-image: linear-gradient(100deg, #ee1919, #001f29, #453bce);
 }
 
 .frozen.theme-selector {
-  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  background-image: linear-gradient(100deg, #ffffff, #77f3e9, #ffffff);
 }
 
 .pirate.theme-selector {
-  background-image: linear-gradient(100deg, #001214, #001f29);
+  background-image: linear-gradient(100deg, #e2cf25, #001f29);
 }
 
-.outersapce.theme-selector {
-  background-image: linear-gradient(100deg, #746069, #af4471);
+.outerspace.theme-selector {
+  background-image: linear-gradient(100deg, #27c022, #221f20);
 }
 
 .dinasaur.theme-selector {
-  background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  background-image: linear-gradient(100deg, #db8e19, #1a1616);
 }
 
-.tinkerbell.theme-selector {
-  background-image: linear-gradient(100deg, #001214, #001f29);
+.unicorn.theme-selector {
+  background-image: linear-gradient(100deg, #db1eec, #001f29);
 }
 
 .theme-selector:hover { 
