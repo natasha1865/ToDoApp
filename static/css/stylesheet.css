@@ -127,7 +127,7 @@ form input {
 /* Input themes*/
 form input {
   background-color: white;
-  color: rgb(247, 226, 223);
+  color: black; 
 }
 
 
@@ -136,8 +136,7 @@ form input:hover {
 }
 
 button {
-  border: none;
-  outline: none; 
+  outline: none;
   transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
 }
 
@@ -162,6 +161,7 @@ form button {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   min-width: 100px;
+  border: none;
 }
 
 
