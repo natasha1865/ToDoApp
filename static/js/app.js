@@ -17,6 +17,9 @@ pirateTheme.addEventListener('click', () => changeTheme3('pirate'));
 outerspaceTheme.addEventListener('click', () => changeTheme4('outerspace'));
 dinasaurTheme.addEventListener('click', () => changeTheme5('dinasaur'));
 unicornTheme.addEventListener('click', () => changeTheme6('unicorn'));
+toDoBtn.addEventListener('click', addToDo);
+toDoList.addEventListener('click', deletecheck);
+document.addEventListener("DOMContentLoaded", getTodos);
 
 
 // Function to change theme
