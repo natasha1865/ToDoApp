@@ -96,6 +96,7 @@ p {
   color: white;
 }
 
+/*Style input form and for button*/
 #header, #form, #datetime {
   margin: 0 1rem;
   min-height: 10vh;
@@ -124,12 +125,10 @@ form input {
   width: 100%;
 }
 
-/* Input themes*/
 form input {
   background-color: white;
   color: black; 
 }
-
 
 form input:hover {
   cursor: text;
@@ -144,7 +143,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* Button themes*/
 button {
   background-color: rgb(247, 226, 223);
   color: rgb(0, 0, 0);
