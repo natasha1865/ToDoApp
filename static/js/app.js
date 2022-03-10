@@ -11,7 +11,7 @@ const toDoInput = document.querySelector('todo-input');
 const toDoList = document.querySelector('todo-list');
 
 // Event Listeners
-standardTheme.addEventListener('click', () => changeThemeStd('standard'));
+//standardTheme.addEventListener('click', () => changeThemeStd('standard'));
 spidermanTheme.addEventListener('click', () => changeTheme1('spiderman'));
 frozenTheme.addEventListener('click', () => changeTheme2('frozen'));
 pirateTheme.addEventListener('click', () => changeTheme3('pirate'));
