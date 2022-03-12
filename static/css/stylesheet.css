@@ -163,6 +163,19 @@ form button {
   margin-top: 2rem;
 }
 
+
+/*style todo list*/
+input.item_input {
+    background-color: none;
+    background-color: white;
+    outline: none;
+    border: none;
+    width: 350px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    height: 30px;
+}
+
 /*.todo {
   margin: 1rem;
   background: rgb(247, 226, 223); 
