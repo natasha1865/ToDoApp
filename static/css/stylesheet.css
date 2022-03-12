@@ -187,6 +187,16 @@ button.editButton {
   
 }
 
+/* style remove button*/
+button.removeButton {
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  font-family: wok sans-serif;
+  background-color: white;
+  width: 85px;
+  border-radius: 5px;
+  
+}
 /*.todo {
   margin: 1rem;
   background: rgb(247, 226, 223); 
