@@ -53,7 +53,7 @@ body {
   margin: 48px;
   margin-top: 5px;
   float: left;
-  box-shadow 300ms ease-in-out;
+  box-shadow: 10px 5px 5px white ease-in-out;
   width: 35px;
 }
 
@@ -94,13 +94,6 @@ p {
   margin-top: 55px;
   margin-left: 0px;
   color: white;
-}
-
-/*Style input form and for button*/
-#header, #form, #datetime {
-  margin: 0 1rem;
-  min-height: 10vh;
-  width: 100%;
 }
 
 form {
@@ -434,4 +427,3 @@ a {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
-  }
