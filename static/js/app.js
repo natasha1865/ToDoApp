@@ -58,13 +58,6 @@ function changeTheme6() {
   document.body.style.backgroundSize = "cover";
 }
   
-//Functions
-function addToDo(event) {
-  event.preventDefault();
-
-}
-
-
 
 
 

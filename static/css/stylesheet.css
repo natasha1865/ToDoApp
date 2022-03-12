@@ -162,21 +162,6 @@ form button {
   border: none;
 }
 
-/* Body light or darker themes 
-.standard {
-  background-image: linear-gradient(100deg, #575656, #062e3f);
-  color: #ffdfdb;
-  transition: 0.3s linear;
-}
-
-/*
-
-form input.light-input::placeholder {
-  color: #1a150e;
-  opacity: 0.7;
-}
-
-
 #myUnOrdList {
   display: flex;
   justify-content: center;
@@ -187,7 +172,7 @@ form input.light-input::placeholder {
 .todo-list {
   min-width: 25%;
 
-  /* To remove the bullets of unordered list*
+  /* To remove the bullets of unordered list*/
   list-style: none;
 }
 
@@ -202,11 +187,6 @@ form input.light-input::placeholder {
   padding: 0.25em 0.5em;
   border-radius: 30px;
   transition: background-color 200ms ease-in-out;
-}
-
-/* Items themes*
-.standard-todo {
-  background-color: rgb(26, 27, 27);
 }
 
 .todo li{
