@@ -96,6 +96,7 @@ p {
   color: white;
 }
 
+/*style form*/
 form {
   display: flex;
   font-size: 1.7rem;
@@ -105,6 +106,7 @@ form {
   width: 100%;
 }
 
+/*style placeholder*/
 form input {
   padding: 10px;
   font-size: 17px;
@@ -130,15 +132,12 @@ form input:hover {
 button {
   outline: none;
   transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+  background-color: rgb(247, 226, 223);
+  color: rgb(0, 0, 0);
 }
 
 button:hover {
   cursor: pointer;
-}
-
-button {
-  background-color: rgb(247, 226, 223);
-  color: rgb(0, 0, 0);
 }
 
 button:hover {
@@ -153,20 +152,6 @@ form button {
   border-bottom-right-radius: 15px;
   min-width: 100px;
   border: none;
-}
-
-#myUnOrdList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-}
-
-.todo-list {
-  min-width: 25%;
-
-  /* To remove the bullets of unordered list*/
-  list-style: none;
 }
 
 .todo {
