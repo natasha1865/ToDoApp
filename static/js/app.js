@@ -50,7 +50,50 @@ function changeTheme6() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
-  
+
+window.onload = function() {
+//variables
+var form = document.getElementById("form");
+var input = document.getElementById("input");
+var btn = document.getElementById("btn");
+var list = document.getElementById("list");
+var id = 1;
+
+//btn event listner
+btn.addEventListener('click', addTodoItem);
+
+//list event listner
+list.addEventListener('click', boxChecked);
+
+//Add to do item to list
+  function addTodoItem() {
+    if (input.value === "") {
+      alert("you must enter some value");
+    }
+    else {
+      if (list.style.borderTop === "") {
+        list.style.borderTop = "2px solid white";
+      }
+      var test = input.value;
+      var item = `<li id="li-${id}">${text}
+                <input id ="box-${id}"
+                    class="checkboxes" type="checkbox"></li>`;
+      list.insertAdjacentHTML('beforeend', item);
+      id++;
+      form.reset();
+    }
+
+  }
+
+  //adding strike trough style to list item
+  function boxChecked(event) {
+    const element = event.target;
+    if(element.type === "checkbox") {
+      element.parentNode.style.textDecoration = "line-through";
+    }
+  }
+}
+
 
 
 
