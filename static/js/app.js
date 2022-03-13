@@ -3,7 +3,7 @@ const spidermanTheme = document.querySelector('.spiderman');
 const frozenTheme = document.querySelector('.frozen');
 const pirateTheme = document.querySelector('.pirate');
 const outerspaceTheme = document.querySelector('.outerspace');
-const dinosaurTheme = document.querySelector('.dinosaurs');
+const dinosaurTheme = document.querySelector('.dinosaur');
 const unicornTheme = document.querySelector('.unicorn');
 
 // Event Listeners to change theme
