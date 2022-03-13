@@ -40,7 +40,7 @@ function changeTheme4() {
 }
 
 function changeTheme5() {
-  document.body.style.backgroundImage = "url('./static/images/Dinosaurs.jpg)";
+  document.body.style.backgroundImage = "url('./static/images/dinosaur.jpg')";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
