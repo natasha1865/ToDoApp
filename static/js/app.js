@@ -50,7 +50,8 @@ function changeTheme6() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
-// getting all required elements
+
+//ToDo app selectors
 const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
@@ -119,43 +120,6 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
 }
-
-//editButton.addEventListener('click', () => this.edit(input));
-    
-    //removeButton.addEventListener('click', () => this.remove(itemBox));
-  //}
-  //edit(input){
-    //input.disabled = !input.disabled;  
-  //}
-
-  //remove(item){
-  //container.removeChild(item);
-  //}
-
-//function check() {
-  //if(input.value != ""){
-    //new item(input.value);
-    //input.value ="";
-  //}
-//}
-//addButton.addEventListener('click',check);
-
-//btn event listner
-//btn.addEventListener('click', addTodoItem);
-
-//list event listner
-//list.addEventListener('click', boxChecked);
-
-
-
-  //adding strike through style to list item
-  //function boxChecked(event) {
-    //const element = event.target;
-    //if(element.type === "checkbox") {
-      //element.parentNode.style.textDecoration = "line-through";
-    //}
-  //}
-//}
 
 
 
