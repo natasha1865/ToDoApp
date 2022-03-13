@@ -6,7 +6,7 @@ const outerspaceTheme = document.querySelector('.outerspace');
 const dinasaurTheme = document.querySelector('.dinasaur');
 const unicornTheme = document.querySelector('.unicorn');
 
-// Event Listeners
+// Event Listeners to change theme
 spidermanTheme.addEventListener('click', () => changeTheme1('spiderman'));
 frozenTheme.addEventListener('click', () => changeTheme2('frozen'));
 pirateTheme.addEventListener('click', () => changeTheme3('pirate'));
@@ -53,46 +53,75 @@ function changeTheme6() {
 
 window.onload = function() {
 //variables
-var form = document.getElementById("form");
-var input = document.getElementById("input");
-var btn = document.getElementById("btn");
-var list = document.getElementById("list");
-var id = 1;
-
-//btn event listner
-btn.addEventListener('click', addTodoItem);
-
-//list event listner
-list.addEventListener('click', boxChecked);
+const addButton = document.querySelector('.addButton');
+var input = document.querySelector('.input');
+const container = document.querySelector('.container');
 
 //Add to do item to list
-  function addTodoItem() {
-    if (input.value === "") {
-      alert("you must enter some value");
-    }
-    else {
-      if (list.style.borderTop === "") {
-        list.style.borderTop = "2px solid white";
-      }
-      var test = input.value;
-      var item = `<li id="li-${id}">${text}
-                <input id ="box-${id}"
-                    class="checkboxes" type="checkbox"></li>`;
-      list.insertAdjacentHTML('beforeend', item);
-      id++;
-      form.reset();
-    }
-
+class item{
+  constructor(itemName){
+    this.createDiv(itemName);
   }
 
-  //adding strike trough style to list item
-  function boxChecked(event) {
-    const element = event.target;
-    if(element.type === "checkbox") {
-      element.parentNode.style.textDecoration = "line-through";
-    }
+  createDiv(itemName){
+    let input = document.createElement('.input');
+    input.value = itemName;
+    input.disabled = true;
+    input.classList.add('item_input');
+    input.type = "text";
+
+    let itexBox = document.createElement('div');
+    itemBox.classList.add('item');
+
+    let editButton = document.createElement('button');
+    editButton.innerHTML = "Edit";
+    editButton.classList.add('editButton');
+
+    let removeButton = document.createElement('button');
+    removeButton.innerHTML = "Remove";
+    removeButton.classList.add('removeButton');
+
+    container.appendChild(itemBox);
+
+    itemBox.appendChild(input);
+    itemBox.appendChild(editButton);
+    itemBox.appendChild(removeButton);
+
+    editButton.addEventListener('click', () => this.edit(input));
+    
+    removeButton.addEventListener('click', () => this.remove(itemBox));
+  }
+  edit(input){
+    input.disabled = !input.disabled;  
+  }
+
+  remove(item){
+  container.removeChild(item);
+  }
+function check() {
+  if(input.value != ""){
+    new item(input.value);
+    input.value ="";
   }
 }
+addButton.addEventListener('click',check);
+
+//btn event listner
+//btn.addEventListener('click', addTodoItem);
+
+//list event listner
+//list.addEventListener('click', boxChecked);
+
+
+
+  //adding strike through style to list item
+  //function boxChecked(event) {
+    //const element = event.target;
+    //if(element.type === "checkbox") {
+      //element.parentNode.style.textDecoration = "line-through";
+    //}
+  //}
+//}
 
 
 
