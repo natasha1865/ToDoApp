@@ -3,7 +3,7 @@ const spidermanTheme = document.querySelector('.spiderman');
 const frozenTheme = document.querySelector('.frozen');
 const pirateTheme = document.querySelector('.pirate');
 const outerspaceTheme = document.querySelector('.outerspace');
-const dinasaurTheme = document.querySelector('.dinasaur');
+const dinosaurTheme = document.querySelector('.dinosaurs');
 const unicornTheme = document.querySelector('.unicorn');
 
 // Event Listeners to change theme
@@ -11,7 +11,7 @@ spidermanTheme.addEventListener('click', () => changeTheme1('spiderman'));
 frozenTheme.addEventListener('click', () => changeTheme2('frozen'));
 pirateTheme.addEventListener('click', () => changeTheme3('pirate'));
 outerspaceTheme.addEventListener('click', () => changeTheme4('outerspace'));
-dinasaurTheme.addEventListener('click', () => changeTheme5('dinasaur'));
+dinosaurTheme.addEventListener('click', () => changeTheme5('dinosaur'));
 unicornTheme.addEventListener('click', () => changeTheme6('unicorn'));
 
 // Function to change theme
@@ -40,7 +40,7 @@ function changeTheme4() {
 }
 
 function changeTheme5() {
-  document.body.style.backgroundImage = "url('./static/images/dinasaur.png')";
+  document.body.style.backgroundImage = "url('./static/images/Dinosaurs.jpg)";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundSize = "cover";
 }
@@ -51,60 +51,61 @@ function changeTheme6() {
   document.body.style.backgroundSize = "cover";
 }
 
-window.onload = function() {
+//window.onload = function() {
 //variables
-const addButton = document.querySelector('.addButton');
-var input = document.querySelector('.input');
-const container = document.querySelector('.container');
+//const addButton = document.querySelector('.addButton');
+//var input = document.querySelector('.input');
+//const container = document.querySelector('.container');
 
 //Add to do item to list
-class item{
-  constructor(itemName){
-    this.createDiv(itemName);
-  }
+//class item{
+  //constructor(itemName){
+    //this.createDiv(itemName);
+  //}
 
-  createDiv(itemName){
-    let input = document.createElement('.input');
-    input.value = itemName;
-    input.disabled = true;
-    input.classList.add('item_input');
-    input.type = "text";
+  //createDiv(itemName){
+    //let input = document.createElement('.input');
+    //input.value = itemName;
+    //input.disabled = true;
+    //input.classList.add('item_input');
+    //input.type = "text";
 
-    let itexBox = document.createElement('div');
-    itemBox.classList.add('item');
+   // let itexBox = document.createElement('div');
+    //itemBox.classList.add('item');
 
-    let editButton = document.createElement('button');
-    editButton.innerHTML = "Edit";
-    editButton.classList.add('editButton');
+    //let editButton = document.createElement('button');
+    //editButton.innerHTML = "Edit";
+    //editButton.classList.add('editButton');
 
-    let removeButton = document.createElement('button');
-    removeButton.innerHTML = "Remove";
-    removeButton.classList.add('removeButton');
+    //let removeButton = document.createElement('button');
+    //removeButton.innerHTML = "Remove";
+    //removeButton.classList.add('removeButton');
 
-    container.appendChild(itemBox);
+    //container.appendChild(itemBox);
 
-    itemBox.appendChild(input);
-    itemBox.appendChild(editButton);
-    itemBox.appendChild(removeButton);
+    //itemBox.appendChild(input);
+    //itemBox.appendChild(editButton);
+    //itemBox.appendChild(removeButton);
 
-    editButton.addEventListener('click', () => this.edit(input));
+    //editButton.addEventListener('click', () => this.edit(input));
     
-    removeButton.addEventListener('click', () => this.remove(itemBox));
-  }
-  edit(input){
-    input.disabled = !input.disabled;  
-  }
+    //removeButton.addEventListener('click', () => this.remove(itemBox));
+  //}
+  //edit(input){
+    //input.disabled = !input.disabled;  
+  //}
 
-  remove(item){
-  container.removeChild(item);
-  }
-function check() {
-  if(input.value != ""){
-    new item(input.value);
-    input.value ="";
-  }
-}
-addButton.addEventListener('click',check);
+  //remove(item){
+  //container.removeChild(item);
+  //}
+
+//function check() {
+  //if(input.value != ""){
+    //new item(input.value);
+    //input.value ="";
+  //}
+//}
+//addButton.addEventListener('click',check);
 
 //btn event listner
 //btn.addEventListener('click', addTodoItem);
