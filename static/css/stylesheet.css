@@ -112,7 +112,7 @@ p {
 .wrapper .inputField {
   margin: 20px 0;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   height: 45px;
   background-color: #001f29;
 }
@@ -140,11 +140,10 @@ p {
   width: 50px;
   height: 100%;
   border: none;
-  color: #fff; 
-  margin-left: 5px;
+  color: rgb(10, 9, 9);
   font-size: 21px;
   outline: none;
-  background: #8E49E8;
+  background: #da81b6;
   cursor: pointer;
   border-radius: 3px;
   opacity: 0.6;
