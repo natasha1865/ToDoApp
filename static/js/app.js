@@ -56,6 +56,10 @@ const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
+const editBtn = document.querySelector("i#editBtn");
+const dateBtn = document.querySelector("i#dateBtn");
+const sortBtn = document.querySelector("i#sortBtn");
+const doneBtn = document.querySelector("i#doneBtn");
 
 // onkeyup event
 inputBox.onkeyup = ()=>{
@@ -121,6 +125,12 @@ deleteAllBtn.onclick = ()=>{
   showTasks(); //call the showTasks function
 }
 
+// add event listners to footer buttons
+editBtn.addEventListener('click', () => editText());
+dateBtn.addEventListener('click', () => addDate());
+sortBtn.addEventListener('click', () => sortText());
+doneBtn.addEventListener('click', () => markDone());
 
 
 
+// edit task function
