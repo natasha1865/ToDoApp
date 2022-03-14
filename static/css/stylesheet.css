@@ -116,7 +116,7 @@ p {
   background-color: #001f29;
 }
 
-.inputField input{
+.inputField input {
   width: 85%;
   height: 100%;
   outline: none;
@@ -131,11 +131,15 @@ p {
   /*background-color: #9b6877;*/
 }
 
-.inputField button{
+::placeholder {
+  color: black;
+}
+
+.inputField button {
   width: 50px;
   height: 100%;
   border: none;
-  color: #fff;
+  color: #fff; 
   margin-left: 5px;
   font-size: 21px;
   outline: none;
@@ -148,56 +152,54 @@ p {
 }
 
 .inputField button:hover,
-.footer button:hover{
+.footer button:hover {
   cursor: pointer;
   background: #721ce3;
 }
 
-.inputField button.active{
+.inputField button.active {
   opacity: 1;
   pointer-events: auto;
 }
 
-
 /*style todo list*/
-.wrapper .todoList{
+.wrapper .todoList {
   max-height: 250px;
   overflow-y: auto;
 }
-.todoList li{
+
+.todoList li {
   position: relative;
   list-style: none;
   height: 45px;
   line-height: 45px;
   margin-bottom: 8px;
   background: #f2f2f2;
-  border-radius: 3px;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
   padding: 0 15px;
   cursor: default;
   overflow: hidden;
 }
-.todoList li .icon{
+
+.todoList li .icon {
   position: absolute;
-  right: -45px;
-  background: #e74c3c;
   width: 45px;
   text-align: center;
-  color: #fff;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  transition: all 0.2s ease;
+  
 }
-.todoList li:hover .icon{
-  right: 0px;
-}
-.wrapper .footer{
+
+.wrapper .footer {
   display: flex;
   width: 100%;
   margin-top: 20px;
   align-items: center;
   justify-content: space-between;
 }
-.footer button{
+
+.footer button {
   padding: 6px 10px;
   border-radius: 3px;
   border: none;
@@ -206,14 +208,15 @@ p {
   font-weight: 400;
   font-size: 16px;
   margin-left: 5px;
-  background: #8E49E8;
+  background-color: #8E49E8;
   cursor: pointer;
   user-select: none;
   opacity: 0.6;
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.footer button.active{
+
+.footer button.active {
   opacity: 1;
   pointer-events: auto;
 }
