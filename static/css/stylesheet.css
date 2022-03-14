@@ -1,8 +1,8 @@
 *{
-  margin: 20px;
+  /* margin: 20px; */
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Courgette', cursive;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Courgette', cursive;;
 }
 
 /*style background color*/
@@ -162,6 +163,12 @@ p {
   pointer-events: auto;
 }
 
+i.fas.fa-trash {
+  float: right;
+  padding-top: 10px;
+  color: blue;
+}
+
 /*style todo list*/
 .wrapper .todoList {
   max-height: 250px;
@@ -183,12 +190,11 @@ p {
 }
 
 .todoList li .icon {
-  position: absolute;
+  /* position: absolute; */
   width: 45px;
   text-align: center;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  
 }
 
 /*Style Button Icons*/
