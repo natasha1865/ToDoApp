@@ -191,6 +191,11 @@ p {
   
 }
 
+/*Style Button Icons*/
+i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
+    font-size: 24px;
+}
+
 .wrapper .footer {
   display: flex;
   width: 100%;
