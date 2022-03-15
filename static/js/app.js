@@ -131,6 +131,9 @@ dateBtn.addEventListener('click', () => addDate());
 sortBtn.addEventListener('click', () => sortText());
 doneBtn.addEventListener('click', () => markDone());
 
-
-
 // edit task function
+function editText() {
+  
+
+}
+
