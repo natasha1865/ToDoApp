@@ -104,16 +104,17 @@ function showTasks(){
   let newLiTag = "";
   listArray.forEach((element, index) => {
     newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})">
-    <i class="fas fa-trash">`;
+    <i class="fas fa-trash"></i></span></li>`;
     newLiTag += `<li>${element}<span class="icon" onclick="editTask(${index})">
-    <i class="fa fa-edit"></i>`;
+    <i class="fa fa-edit"></i></span></li>`;
     newLiTag += `<li>${element}<span class="icon" onclick="dateTask(${index})">
-    <i class='far fa-calendar-alt'>`;
+    <i class='far fa-calendar-alt'></span></li>`;
     newLiTag += `<li>${element}<span class="icon" onclick="sortTask(${index})">
     <i class='fas fa-sort-alpha-down'>`;
     newLiTag += `<li>${element}<span class="icon" onclick="doneTask(${index})">
     <i class="fa fa-strikethrough"></span></li>`;
   });
+
   todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
   inputBox.value = ""; //once task added leave the input field blank
 }
