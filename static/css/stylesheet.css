@@ -152,7 +152,7 @@ p {
 .inputField button:hover,
 .footer button:hover {
   cursor: pointer;
-  background: #721ce3;
+  background: #583f47;
 }
 
 .inputField button.active {
@@ -163,7 +163,7 @@ p {
 i.fas.fa-trash {
   float: right;
   padding-top: 10px;
-  color:  #583f47; 
+  color: #da81b6;
 }
 
 /*style todo list*/
@@ -215,7 +215,7 @@ i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethr
   font-weight: 400;
   font-size: 16px;
   margin-left: 5px;
-  background-color: #8E49E8;
+  background-color: #c0456a;
   cursor: pointer;
   user-select: none;
   opacity: 0.6;
