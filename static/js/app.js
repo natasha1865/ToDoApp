@@ -105,10 +105,8 @@ function showTasks(){
   listArray.forEach((element, index) => {
     newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash">
     </i></span></li>`;
-
-    
-
-    //newLiTag += `<li>${element}<span class="icon" onclick="editTask(${index})">
+  
+     //newLiTag += `<li>${element}<span class="icon" onclick="editTask(${index})">
     //<i class="fa fa-edit"></i></span></li>`;
     //newLiTag += `<li>${element}<span class="icon" onclick="dateTask(${index})">
     //<i class='far fa-calendar-alt'></span></li>`;
@@ -137,6 +135,19 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
 }
+
+function UpdateListOnScreen(NewListItem){
+
+  var grabList = document.getElementById('requestList');
+
+  var text = ""+ GetCalendarName(NewListItem.calChoice) +" For "+ GetLessonSlot(NewListItem.lessonChoice) + " On " + GetDateInTextForm(NewListItem.date) + "";   var entry = document.createElement('li');   entry.id = list.length-1;   entry.className = "ItemNotChecked";   entry.appendChild(document.createTextNode(text));
+
+  /*Add a button to each LI */
+var button = document.createElement('button');
+button.innerText = 'Click me!';
+entry.appendChild(button);
+
+  grabList.appendChild(entry); }
 
 // edit task function
 function editText() {
