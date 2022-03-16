@@ -106,6 +106,8 @@ function showTasks(){
     newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash">
     </i></span></li>`;
 
+    
+
     //newLiTag += `<li>${element}<span class="icon" onclick="editTask(${index})">
     //<i class="fa fa-edit"></i></span></li>`;
     //newLiTag += `<li>${element}<span class="icon" onclick="dateTask(${index})">
@@ -135,12 +137,6 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
 }
-
-// add event listners to footer buttons
-editBtn.addEventListener('click', () => editText());
-dateBtn.addEventListener('click', () => addDate());
-sortBtn.addEventListener('click', () => sortText());
-doneBtn.addEventListener('click', () => markDone());
 
 // edit task function
 function editText() {
