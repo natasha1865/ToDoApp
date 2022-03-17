@@ -101,11 +101,12 @@ function showTasks(){
   //Adding buttons icons to the new todo list item
   let newLiTag = "";
   listArray.forEach((element, index) => {
-    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i> 
-    <i class="fa fa-edit"></i>
+    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})">
     <i class='far fa-calendar-alt'></i>
+    <i class="fa fa-edit"></i>
     <i class='fas fa-sort-alpha-down'></i>
     <i class="fa fa-strikethrough"></i>
+    <i class="fas fa-trash"></i>
     </span></li>`;
   });
 
