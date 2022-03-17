@@ -56,10 +56,6 @@ const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
-const editBtn = document.querySelector("i#editBtn");
-const dateBtn = document.querySelector("i#dateBtn");
-const sortBtn = document.querySelector("i#sortBtn");
-const doneBtn = document.querySelector("i#doneBtn");
 
 // onkeyup event
 inputBox.onkeyup = ()=>{
@@ -103,19 +99,8 @@ function showTasks(){
   }
   let newLiTag = "";
   listArray.forEach((element, index) => {
-    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash">
-    </i></span></li>`;
-  
-     //newLiTag += `<li>${element}<span class="icon" onclick="editTask(${index})">
-    //<i class="fa fa-edit"></i></span></li>`;
-    //newLiTag += `<li>${element}<span class="icon" onclick="dateTask(${index})">
-    //<i class='far fa-calendar-alt'></span></li>`;
-    //newLiTag += `<li>${element}<span class="icon" onclick="sortTask(${index})">
-    //<i class='fas fa-sort-alpha-down'>`;
-    //newLiTag += `<li>${element}<span class="icon" onclick="doneTask(${index})">
-    //<i class="fa fa-strikethrough"></span></li>`;
+    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
   });
-
   todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
   inputBox.value = ""; //once task added leave the input field blank
 }
@@ -136,22 +121,19 @@ deleteAllBtn.onclick = ()=>{
   showTasks(); //call the showTasks function
 }
 
-function UpdateListOnScreen(NewListItem){
 
-  var grabList = document.getElementById('requestList');
 
-  var text = ""+ GetCalendarName(NewListItem.calChoice) +" For "+ GetLessonSlot(NewListItem.lessonChoice) + " On " + GetDateInTextForm(NewListItem.date) + "";   var entry = document.createElement('li');   entry.id = list.length-1;   entry.className = "ItemNotChecked";   entry.appendChild(document.createTextNode(text));
+//let newLiTag1 = "";
+    //listArray.forEach((element, index) => {
+      //newLiTag1 += `<li>${element}<span class="icon" onclick="editTask(${index})">
+    //<i class="fa fa-edit"></i></span></li>`;
 
-  /*Add a button to each LI */
-var button = document.createElement('button');
-button.innerText = 'Click me!';
-entry.appendChild(button);
-
-  grabList.appendChild(entry); }
-
+    //newLiTag += `<li>${element}<span class="icon" onclick="dateTask(${index})">
+    //<i class='far fa-calendar-alt'></span></li>`;
+    //newLiTag += `<li>${element}<span class="icon" onclick="sortTask(${index})">
+    //<i class='fas fa-sort-alpha-down'>`;
+    //newLiTag += `<li>${element}<span class="icon" onclick="doneTask(${index})">
+    //<i class="fa fa-strikethrough"></span></li>`;
 // edit task function
-function editText() {
-  
-
-}
+//function editText()
 
