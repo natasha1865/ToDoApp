@@ -130,11 +130,3 @@ deleteAllBtn.onclick = ()=>{
 }
 
 
-    
-    //newLiTag += `<li>${element}<span class="icon" onclick="sortTask(${index})">
-    //<i class='fas fa-sort-alpha-down'>`;
-    //newLiTag += `<li>${element}<span class="icon" onclick="doneTask(${index})">
-    //<i class="fa fa-strikethrough"></span></li>`;
-// edit task function
-//function editText()
-
