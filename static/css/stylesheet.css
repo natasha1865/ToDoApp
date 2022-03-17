@@ -98,7 +98,7 @@ p {
   color: white;
 }
 
-/*style wrqpper*/
+/*style wrpper*/
 .wrapper {
   font-size: 1.7rem;
   max-width: 900px;
@@ -160,9 +160,10 @@ p {
   pointer-events: auto;
 }
 
-i.fas.fa-trash {
+/*Style Todo List buttons*/
+i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
   float: right;
-  padding-top: 10px;
+  padding: 10px;
   color: #da81b6;
 }
 
@@ -192,11 +193,6 @@ i.fas.fa-trash {
   border-radius: 0 3px 3px 0;
   cursor: pointer;
 }
-
-/*Style Button Icons*/
-i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
-  font-size: 24px;
- }
 
 .wrapper .footer {
   display: flex;
