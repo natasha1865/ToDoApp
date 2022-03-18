@@ -25,77 +25,82 @@ body {
   margin-bottom: 25px;;
   padding-top: 1px;
   padding-bottom: 1px;
-  }
-
-  /* Style the h2 tag*/
-  h2 {
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Courgette', cursive;;
-}
-
-/*style background color*/
-body {
-    background-image: linear-gradient(100deg, #54454A, #583f47, #945064, #c0456a, #764453, #54454A);
-}
-
-/* Theme buttons div */
-.box {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  margin-right: 3%;
-}
-
-.theme-selector  {
-  border: 2.5px solid white;
-  border-radius: 100%;
-  height: 35px;
-  margin: 48px;
-  margin-top: 5px;
-  float: left;
-  box-shadow: 10px 5px 5px white ease-in-out;
-  width: 35px;
-}
-
-/*button colors for themes*/
-.standard.theme-selector {
-  background-image: linear-gradient(100deg, #c56b86, #5e3844, #583f47);
-}
-.spiderman.theme-selector {
-  background-image: linear-gradient(100deg, #ee1919, #001f29, #453bce);
-}
-
-.frozen.theme-selector {
-  background-image: linear-gradient(100deg, #ffffff, #77f3e9, #ffffff);
-}
-
-.pirate.theme-selector {
-  background-image: linear-gradient(100deg, #db8e19, #1a1616);
-} 
-
-.outerspace.theme-selector {
-  background-image: linear-gradient(100deg, #27c022, #221f20);
-}
-
-.dinosaur.theme-selector {
-  background-image: linear-gradient(100deg, #e2cf25, #001f29);
-}
-
-.unicorn.theme-selector {
-  background-image: linear-gradient(100deg, #db1eec, #001f29);
-}
-
-.theme-selector:hover { 
-  box-shadow: white 0 0 8px;
-  cursor: pointer;
 }
 
 p {
   margin-top: 55px;
   margin-left: 0px;
   color: white;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Courgette', cursive;
+}
+
+/*styling for switch themes*/
+:root {
+  --standard: linear-gradient(100deg, #583f47, #c56b86, #5e3844);
+  --spiderman: linear-gradient(100deg,#583f47, #c56b86, #5e3844);
+  --frozen:  linear-gradient(100deg,#583f47, #c56b86, #5e3844);
+  --pirate: linear-gradient(100deg, #583f47, #c56b86, #5e3844);
+  --outerspace: linear-gradient(100deg, #583f47, #c56b86, #5e3844);
+  --dinosaur: linear-gradient(100deg, #583f47, #c56b86, #5e3844);
+  --unicorn: linear-gradient(100deg, #583f47, #c56b86, #5e3844);
+}
+
+/* Theme buttons div */
+.theme-switches {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3%;
+}
+
+/*styling of switches*/
+.switch  {
+border: 2.5px solid white;
+border-radius: 100%;
+height: 35px;
+margin: 48px;
+margin-top: 5px;
+float: left;
+box-shadow: 10px 5px 5px white ease-in-out;
+width: 35px;
+}
+
+.switch:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+#switch-1 {
+  background-image: var(--standard);
+}
+
+#switch-2 {
+  background-image: var(--spiderman);
+}
+
+#switch-3 {
+  background-image: var(--frozen);
+}
+
+#switch-4 {
+  background-image: var(--pirate);
+}
+
+#switch-5 {
+  background-image: var(--outerspace);
+}
+
+#switch-6 {
+  background-image: var(--dinosaur);
+}
+
+#switch-7 {
+  background-image: var(--unicorn);
 }
 
 /*style wrpper*/
@@ -127,7 +132,7 @@ p {
   transition: all 0.3s ease;
   border: none;
   outline: none;
-  /*background-color: #9b6877;*/
+  background-color: #9b6877;
 }
 
 ::placeholder {
