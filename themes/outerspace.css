@@ -1,0 +1,44 @@
+:root {
+    --standard: linear-gradient(100deg, #f5990e, #e22929);
+    --spiderman: linear-gradient(100deg,#f5990e, #e22929);
+    --frozen: linear-gradient(100deg,#f5990e, #e22929);
+    --pirate: linear-gradient(100deg,#f5990e, #e22929);
+    --outerspace: linear-gradient(100deg,#f5990e, #e22929);
+    --dinosaur: linear-gradient(100deg, #f5990e, #e22929);
+    --unicorn: linear-gradient(100deg, #f5990e, #e22929);
+    --theme-color: #f5990e;
+    --button-color: #e22929;
+    --icon-color: rgb(12, 8, 12);
+    --span-color: #f5990e;
+    --input-color: #f5990e;
+    --list-color: #e22929;
+    }
+      
+    body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    h2, p, div#header {
+    color: var(--theme-color);
+    }
+    
+    .inputField input {
+    background-color: var(--input-color);
+    }
+    
+    .inputField button {
+    background-color: var(--button-color)
+    }
+    
+    .todoList li {
+    background-color: var(--list-color);
+    }
+    
+    i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
+    color: var(--icon-color);
+    }
+    
+    span {
+    color: var(--span-color);
+    }
