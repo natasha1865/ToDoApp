@@ -1,0 +1,45 @@
+:root {
+    
+    --standard: linear-gradient(100deg, #ffffff, #77f3e9, #ffffff);
+    --spiderman: linear-gradient(100deg,#ffffff, #77f3e9, #ffffff);
+    --frozen: linear-gradient(100deg, #ffffff, #77f3e9, #ffffff);
+    --pirate: linear-gradient(100deg,#ffffff, #77f3e9, #ffffff);
+    --outerspace: linear-gradient(100deg,#ffffff, #77f3e9, #ffffff);
+    --dinosaur: linear-gradient(100deg, #ffffff, #77f3e9, #ffffff);
+    --unicorn: linear-gradient(100deg, #ffffff, #77f3e9, #ffffff);
+    --theme-color: rgb(119, 38, 119);
+    --button-color: #3adbce;  
+    --icon-color: rgb(119, 38, 119); 
+    --span-color: #3adbce; 
+    --input-color: rgb(119, 38, 119);
+    --list-color: #3adbce; 
+}
+      
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2, p, div#header {
+    color: var(--theme-color);
+}
+
+.inputField input {
+    background-color: var(--input-color);
+}
+
+.inputField button {
+    background-color: var(--button-color)
+}
+
+.todoList li {
+    background-color: var(--list-color);
+}
+
+i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
+    color: var(--icon-color);
+}
+
+span {
+    color: var(--span-color);
+}
