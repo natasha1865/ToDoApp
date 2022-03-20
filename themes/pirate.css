@@ -1,0 +1,44 @@
+:root {
+--standard: linear-gradient(100deg, #f5990e, #1a1616);
+--spiderman: linear-gradient(100deg,#f5990e, #1a1616);
+--frozen: linear-gradient(100deg,#f5990e, #1a1616);
+--pirate: linear-gradient(100deg,#f5990e, #1a1616);
+--outerspace: linear-gradient(100deg,#f5990e, #1a1616);
+--dinosaur: linear-gradient(100deg, #f5990e, #1a1616);
+--unicorn: linear-gradient(100deg, #f5990e, #1a1616);
+--theme-color: rgb(12, 8, 12);
+--button-color: #f5990e;
+--icon-color: rgb(12, 8, 12);
+--span-color: #f5990e;
+--input-color: rgb(204, 150, 89);
+--list-color: #7c480b; 
+}
+  
+body {
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h2, p, div#header {
+color: var(--theme-color);
+}
+
+.inputField input {
+background-color: var(--input-color);
+}
+
+.inputField button {
+background-color: var(--button-color)
+}
+
+.todoList li {
+background-color: var(--list-color);
+}
+
+i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
+color: var(--icon-color);
+}
+
+span {
+color: var(--span-color);
+}
