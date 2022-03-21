@@ -1,17 +1,17 @@
 :root {
-    --standard: linear-gradient(100deg, #f5990e, #e22929);
-    --spiderman: linear-gradient(100deg,#f5990e, #e22929);
-    --frozen: linear-gradient(100deg,#f5990e, #e22929);
-    --pirate: linear-gradient(100deg,#f5990e, #e22929);
-    --outerspace: linear-gradient(100deg,#f5990e, #e22929);
-    --dinosaur: linear-gradient(100deg, #f5990e, #e22929);
-    --unicorn: linear-gradient(100deg, #f5990e, #e22929);
-    --theme-color: #41c0e7;
-    --button-color: #f56a0e;
-    --icon-color: #f56a0e;
-    --span-color: #f56a0e;
-    --input-color:  #415fe7;
-    --list-color: #41c0e7;
+    --standard: linear-gradient(100deg, #e2cf25, #001f29);
+    --spiderman: linear-gradient(100deg,#e2cf25, #001f29);
+    --frozen: linear-gradient(100deg,#e2cf25, #001f29);
+    --pirate: linear-gradient(100deg,#e2cf25, #001f29);
+    --outerspace: linear-gradient(100deg,#e2cf25, #001f29);
+    --dinosaur: linear-gradient(100deg, #e2cf25, #001f29);
+    --unicorn: linear-gradient(100deg, #e2cf25, #001f29);
+    --theme-color: #737a4c;
+    --button-color: #b17c0a;
+    --icon-color: #533a04;
+    --span-color: #0e0f07;
+    --input-color: #6d792a;
+    --list-color: #737a4c;
     }
       
     body {

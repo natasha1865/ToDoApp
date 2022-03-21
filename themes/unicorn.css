@@ -1,17 +1,17 @@
 :root {
-    --standard: linear-gradient(100deg, #f5990e, #e22929);
-    --spiderman: linear-gradient(100deg,#f5990e, #e22929);
-    --frozen: linear-gradient(100deg,#f5990e, #e22929);
-    --pirate: linear-gradient(100deg,#f5990e, #e22929);
-    --outerspace: linear-gradient(100deg,#f5990e, #e22929);
-    --dinosaur: linear-gradient(100deg, #f5990e, #e22929);
-    --unicorn: linear-gradient(100deg, #f5990e, #e22929);
-    --theme-color: #41c0e7;
-    --button-color: #f56a0e;
-    --icon-color: #f56a0e;
-    --span-color: #f56a0e;
-    --input-color:  #415fe7;
-    --list-color: #41c0e7;
+    --standard: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --spiderman: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --frozen: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --pirate: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --outerspace: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --dinosaur: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --unicorn: linear-gradient(100deg, #e72a92, #dbe5e9);
+    --theme-color: #f159d8;
+    --button-color: #32d1e6;
+    --icon-color: rgb(102, 20, 102);
+    --span-color: #32d1e6;
+    --input-color: #e789eb;
+    --list-color: #f159d8;
     }
       
     body {
