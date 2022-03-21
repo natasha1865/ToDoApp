@@ -1,13 +1,15 @@
-//changing between themes
+//creating variable for switching theme
 let switches = document.getElementsByClassName('switch');
 let style = localStorage.getItem('style');
 
+//return saved theme to local storage
 if (style == null) {
   setTheme('standard');
 } else {
   setTheme(style);
 }
 
+//add event listner
 for (let i of switches) {
   i.addEventListener('click', function () {
     let theme = this.dataset.theme;
@@ -15,6 +17,7 @@ for (let i of switches) {
   });
 }
 
+//function to set themes
 function setTheme(theme) {
   if (theme == 'standard') {
     document.getElementById('switcher-id').href = './themes/standard.css';
