@@ -21,7 +21,6 @@ for (let i of switches) {
 function setTheme(theme) {
   if (theme == 'standard') {
     document.getElementById('switcher-id').href = './themes/standard.css';
-    //let style = document.body.style.backgroundImage = './themes/standard.css';
   } else if (theme == 'spiderman') {
     document.getElementById('switcher-id').href = './themes/spiderman.css';
     let style = document.body.style.backgroundImage = "url('./static/images/spiderman.jpg')";
