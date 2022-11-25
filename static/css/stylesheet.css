@@ -96,83 +96,25 @@ h2 {
 
 /*style wrpper*/
 .wrapper {
-  font-size: 1.7rem;
-  max-width: 900px;
   width: 100%;
   padding: 25px;
   border-radius: 5px;
-  margin-left: 330px;
 }
 
 /*style placeholder*/
-.wrapper .inputField {
+.wrapper .input {
   margin: 20px 0;
   width: 100%;
-  height: 45px;
-}
-
-.inputField input {
-  width: 85%;
-  height: 100%;
-  outline: none;
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
-  border: 1px solid #ccc;
-  font-size: 17px;
-  padding-left: 15px;
-  transition: all 0.3s ease;
-  border: none;
-  outline: none;
-  background-color: #9b6877;
 }
 
 ::placeholder {
   color: black;
 }
 
-.inputField button {
-  width: 50px;
-  height: 100%;
-  border: none;
-  color: rgb(10, 9, 9);
-  font-size: 21px;
-  outline: none;
-  background: #da81b6;
-  cursor: pointer;
-  border-radius: 3px;
-  opacity: 0.6;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.inputField button:hover,
-.footer button:hover {
-  cursor: pointer;
-  background: #583f47;
-}
-
-.inputField button.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/*Style Todo List buttons*/
-i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i.fa.fa-strikethrough {
-  float: right;
-  padding: 10px;
-  color: #da81b6;
-}
-
-/*style todo list*/
-.wrapper .todoList {
-  max-height: 250px;
-  overflow-y: auto;
-}
-
-.todoList li {
+.todo li {
   position: relative;
   list-style: none;
-  height: 45px;
+  height: 35px;
   line-height: 45px;
   margin-bottom: 8px;
   background: #f2f2f2;
@@ -183,45 +125,65 @@ i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i
   overflow: hidden;
 }
 
-.todoList li .icon {
-  width: 45px;
-  text-align: center;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
+  .wrapper .footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  font-size: 1.7rem;
+  max-width: 900px;
+  width: 50%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-left: 330px;
 }
 
-.wrapper .footer {
-  display: flex;
-  width: 100%;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer button {
-  padding: 6px 10px;
-  border-radius: 3px;
+.input {
   border: none;
-  outline: none;
-  color: #fff;
-  font-weight: 400;
-  font-size: 16px;
-  margin-left: 5px;
-  background-color: #c0456a;
+  color: #444;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #d5d5d5;
+}
+
+.input:focus {
+  outline-color: rgb(179, 131, 226);
+}
+
+.todos {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  border-top: 1px solid #e5e5e5;
   cursor: pointer;
-  user-select: none;
-  opacity: 0.6;
-  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
 }
 
-.footer button.active {
-  opacity: 1;
-  pointer-events: auto;
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
 }
 
-/*Style footer span text*/
-span {
-    font-size: 1em;
-    color: white;
+small {
+  color: #b5b5b5;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
 }
-
