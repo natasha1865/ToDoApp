@@ -10,7 +10,7 @@
     --theme-color: rgb(119, 38, 119);
     --button-color: #3adbce;  
     --icon-color: rgb(119, 38, 119); 
-    --span-color: #3adbce; 
+    --span-color: #c3d9d7; 
     --input-color: rgb(119, 38, 119);
     --list-color: #3adbce; 
 }
@@ -24,7 +24,7 @@ h2, p, div#header {
     color: var(--theme-color);
 }
 
-.inputField input {
+.input {
     background-color: var(--input-color);
 }
 
@@ -32,7 +32,7 @@ h2, p, div#header {
     background-color: var(--button-color)
 }
 
-.todoList li {
+.todos li {
     background-color: var(--list-color);
 }
 
@@ -40,6 +40,6 @@ i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i
     color: var(--icon-color);
 }
 
-span {
-    color: var(--span-color);
+small {
+    color: var(--input-color);
 }

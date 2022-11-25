@@ -23,7 +23,7 @@
     color: var(--theme-color);
     }
     
-    .inputField input {
+    .input {
     background-color: var(--input-color);
     }
     
@@ -31,7 +31,7 @@
     background-color: var(--button-color)
     }
     
-    .todoList li {
+    .todos li {
     background-color: var(--list-color);
     }
     
@@ -39,6 +39,6 @@
     color: var(--icon-color);
     }
     
-    span {
+    small {
     color: var(--span-color);
     }

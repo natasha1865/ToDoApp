@@ -23,7 +23,7 @@ h2, p, div#header {
 color: var(--theme-color);
 }
 
-.inputField input {
+.input {
 background-color: var(--input-color);
 }
 
@@ -31,7 +31,7 @@ background-color: var(--input-color);
 background-color: var(--button-color)
 }
 
-.todoList li {
+.todos li {
 background-color: var(--list-color);
 }
 
@@ -39,6 +39,6 @@ i.fas.fa-trash, i.fa.fa-edit, i.far.fa-calendar-alt, i.fas.fa-sort-alpha-down, i
 color: var(--icon-color);
 }
 
-span {
-color: var(--span-color);
+small {
+color: var(--list-color);
 }

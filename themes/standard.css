@@ -5,10 +5,17 @@
   
   body {
     background-image: var(--back-color);
+    background-repeat: no-repeat;
+    background-size: cover;
   }  
   
   h2 {
     color: var(--header-text);
   }
 
+  .input {
+    background-color: var(--input-color);
+    outline:5px;
+    outline: #583f47;
+    }
   

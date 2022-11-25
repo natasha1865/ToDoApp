@@ -18,11 +18,11 @@ body {
     background-size: cover;
 }
 
-h2, span, p, div#header {
+h2, small, p, div#header {
     color: var(--theme-color);
 }
 
-.inputField input {
+.input {
     background-color: var(--input-color);
 }
 
@@ -30,7 +30,7 @@ h2, span, p, div#header {
     background-color: var(--button-color)
 }
 
-.todoList li {
+.todos li {
     background-color: var(--list-color);
 }
 
