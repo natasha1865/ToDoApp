@@ -1,4 +1,3 @@
-
 //ToDo app selectors
 const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
@@ -31,7 +30,7 @@ addBtn.onclick = ()=>{ //when user click on plus icon button
   addBtn.classList.remove("active"); //unactive the add button once the task added
 }
 
-//function showTasks(){
+function showTasks(){
   let getLocalStorageData = localStorage.getItem("New Todo");
   if(getLocalStorageData == null){
     listArray = [];
@@ -56,7 +55,7 @@ addBtn.onclick = ()=>{ //when user click on plus icon button
     <i class="fa fa-strikethrough"></i>
     <i class="fas fa-trash"></i>
     </span></li>`;
-   });
+  });
 
   todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
   inputBox.value = ""; //once task added leave the input field blank
@@ -77,7 +76,3 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
 }
-
-
-
-
