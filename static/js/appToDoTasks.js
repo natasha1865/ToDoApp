@@ -61,15 +61,6 @@ function showTasks(){
   inputBox.value = ""; //once task added leave the input field blank
 }
 
-// Event Listeners
-
-let btnClear = document.querySelector('i.fas.fa-trash');
-let input = document.querySelectorAll(".inputField input")
-
-btnClear.onclick = ()=>{
-  input.forEach(input => input.value = '');
-};
-
 // delete task function
 function deleteTask(index){
   let getLocalStorageData = localStorage.getItem("New Todo");
@@ -80,9 +71,8 @@ function deleteTask(index){
 }
 
 // delete all tasks function
-//deleteAllBtn.onclick = ()=>{
-  //listArray = []; //empty the array
-  //localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
-  //showTasks(); //call the showTasks function
-//}
-
+deleteAllBtn.onclick = ()=>{
+  listArray = []; //empty the array
+  localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
+  showTasks(); //call the showTasks function
+}
