@@ -225,6 +225,3 @@ span {
     color: white;
 }
 
-.todoList li.completed {
-  text-decoration: line-through;
-}
